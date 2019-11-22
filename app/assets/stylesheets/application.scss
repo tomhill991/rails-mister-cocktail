@@ -23,28 +23,41 @@
   text-align:center;
 }
 
+.container-new {
+  background-image: url("https://cdn.pixabay.com/photo/2016/01/02/04/58/martini-1117932_1280.jpg")
+}
+
 .simple-form .btn {
   text-align:center;
 }
 
 .container-show {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  text-align: center;
+  min-height: 100vh;
 }
 
 .fas {
   font-size: 15px;
+  color: #adabab;
 }
 
-.cocktail-ingredients {
-}
-
-.cocktail-ingredients > h4 {
-   padding: 10px 187px 0 0;
+.cocktail-name-img img {
+  border-radius: 5px
 }
 
 .form-height {
   height: 600px;
+}
+
+.container-index {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.cocktail-ingredients {
+  margin: 8px;
 }
