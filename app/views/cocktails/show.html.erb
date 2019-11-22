@@ -1,12 +1,12 @@
-<div class="container">
-
-  <h1><%= @cocktail.name %></h1>
-    <div class="row">
-      <div class="col-lg-6">
-        <% @cocktail.doses.each do |d|%>
-          <h4> <%= d.ingredient.name %> - <%= d.description %> <%= link_to dose_path(d.id), method: :delete do %> <i class="fas fa-trash-alt"></i><% end %></h4>
-          <% end %>
-      </div>
+<div class="container-show">
+  <div class="cocktail-name-img">
+    <h1><%= @cocktail.name %></h1>
+      <%= image_tag @cocktail.photo.url, width:400, radius: 5 %>
+   </div>
+    <div class="cocktail-ingredients">
+      <% @cocktail.doses.each do |d|%>
+        <h4> <%= d.ingredient.name %> - <%= d.description %> <%= link_to dose_path(d.id), method: :delete do %> <i class="fas fa-trash-alt"></i><% end %></h4>
+        <% end %>
     </div>
 </div>
 

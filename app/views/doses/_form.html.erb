@@ -1,6 +1,6 @@
 <%= simple_form_for([@cocktail, @dose]) do |f| %>
 <%= f.association :ingredient %>
-<%= f.label :description, "Enter a measurement of ingredient for your cocktail here" %>
+<%= f.label :description, label: "Enter a measurement of ingredient for your cocktail here" %>
 <%= f.text_field :description %>
-<%= f.submit %>
+<%= f.submit class: "btn btn-primary"%>
 <% end %>
