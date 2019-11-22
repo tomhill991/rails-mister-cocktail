@@ -2,3 +2,6 @@
 <%= render 'form', cocktail: @cocktail %>
 
 <%= link_to 'Back', cocktails_path %>
+
+
+style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path cocktail.photo, height: 300, width: 400, crop: :fill %>')>">
